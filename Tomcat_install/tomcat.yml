@@ -1,0 +1,14 @@
+---
+
+# This playbook deploys a simple standalone Tomcat 7 server.
+
+- name: Installing tomcat
+  hosts: muni1
+  #remote_user: root
+  #become: yes
+  #become_method: sudo
+  
+
+  roles:
+    - selinux
+    - tomcat
