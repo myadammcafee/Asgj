@@ -1,9 +1,0 @@
-
----
-- hosts: muni1
-
-  tasks:
-  - name: cehck if httpd is available
-    stat: path=/etc/init.d/httpd
-    register: service_status
-    when: service_status.rc != 0 and ("unrecognized service")
