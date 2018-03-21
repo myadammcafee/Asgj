@@ -1,0 +1,7 @@
+
+---
+- name: run local script on remote
+  hosts: muni1
+  tasks:
+    #- name: running command on remote
+    - script: /root/Devops/shah.sh

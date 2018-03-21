@@ -1,0 +1,6 @@
+---
+- name: Install and Configure FTP serer
+  hosts: muni1
+  
+  roles:
+    - ftp

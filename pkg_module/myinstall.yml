@@ -1,0 +1,12 @@
+---
+- name: working with yum
+  hosts: all
+  tasks:
+   - name: remove the Apache pkg
+     yum:
+      name: httpd
+      state: absent
+   - name: install latest version of Apache
+     yum:
+      name: httpd
+      state: present

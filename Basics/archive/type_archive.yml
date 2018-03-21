@@ -1,0 +1,8 @@
+
+- hosts: muni1
+  tasks:
+    - name: Create multiple pkgs with same source
+      archive:
+         path: /root/results
+         dest: /root/muni.results
+         format: zip

@@ -1,0 +1,12 @@
+
+---
+- name: Learning command module
+  hosts: muni1
+  tasks:
+  
+  - name: run cmd if file doestnot exist
+
+    command: cat /root/Devops/munich creates=/root/Devops/yadam
+    register: product
+  - name: print mydns var
+    debug: msg="My product {{ product.stdout }}" 

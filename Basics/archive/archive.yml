@@ -1,0 +1,6 @@
+- hosts: muni1
+  tasks:
+    - name: Create archive
+      archive:
+         path: /root/results
+         dest: /root/ANSIBLE/results.tar.gz
