@@ -1,0 +1,11 @@
+
+- hosts: muni1
+  tasks:
+    - name: delete existing file
+      file:
+        path: /root/ANSIBLE/munich.txt
+        state: absent
+    - name: Delete dir
+      file:
+        path: /root/ANSIBLE/munich
+        state: absent
