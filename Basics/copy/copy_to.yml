@@ -1,0 +1,9 @@
+
+- hosts: muni1
+  tasks:
+    - name: copy from from here to remote machine
+      copy:
+        src: /root/Munichandra/Ansible/Asgj/Basics/copy/yadam.txt
+        dest: /root/ANSIBLE/yadam.txt
+        backup: yes
+        mode: 0777

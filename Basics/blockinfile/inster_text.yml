@@ -1,0 +1,21 @@
+
+- hosts: muni1
+  vars:
+    hostname: atdjenkins.com
+  tasks:
+   - name: Inster some data into file
+     blockinfile:
+       path: /root/ANSIBLE/munich.txt
+       block: This if the file which is created by Ansible
+   - name: insert morelines
+     blockinfile:
+        path: /root/ANSIBLE/munich.txt
+        block: |
+           This is munichnadra {{ hostname }}
+           with Multiple lines
+        backup: yes
+#   - name: remove content
+#     blockinfile:
+#       path: /root/ANSIBLE/munich.txt
+#       block:
+#       backup: yes
