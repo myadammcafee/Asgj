@@ -1,7 +1,0 @@
-
----
-- name: to test raw
-  hosts: muni1
-  tasks:
-    - name: install python-simplejson
-      raw: yum -y install python-simplejson
