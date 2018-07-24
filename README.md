@@ -23,5 +23,9 @@ Linux Learning
       Minimum number of days between password change          : 0
       Maximum number of days between password change          : 90
       Number of days of warning before password expires       : 7
+C . Maximum days for password change 
+       
+      chage -M 90 orbit - password expire days
+D . To set warning before password expires
 
-
+      chage -W 10 orbit - worning msg before 10 days of password expires.
